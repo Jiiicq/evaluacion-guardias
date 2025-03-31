@@ -1,78 +1,81 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Evaluación Psicológica para Guardias</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      background: linear-gradient(to bottom, #00416A, #E4E5E6);
-      color: white;
-      text-align: center;
-      padding: 2rem;
-    }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-    p {
-      font-size: 1.2rem;
-      max-width: 600px;
-      margin: 0 auto 2rem;
-    }
-    .botones {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      max-width: 300px;
-      margin: 0 auto;
-    }
-    .boton {
-      background-color: #ffffff;
-      color: #00416A;
-      padding: 1rem;
-      border: none;
-      border-radius: 10px;
-      font-size: 1.1rem;
-      font-weight: bold;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-    .boton:hover {
-      background-color: #f1f1f1;
-    }
-    .whatsapp {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #25D366;
-      color: white;
-      padding: 15px;
-      border-radius: 50%;
-      font-size: 24px;
-      text-decoration: none;
-    }
-    .logo {
-      max-width: 120px;
-      margin-bottom: 1rem;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluaciones Psicológicas Guardias de Seguridad OS10</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
 </head>
 <body>
 
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Emoji_u1f575.svg/2048px-Emoji_u1f575.svg.png" alt="Logo Evaluación" class="logo"/>
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <h2 class="nav__title">Evaluaciones Psicológicas Guardias de Seguridad OS10</h2>
+            </div>
+        </nav>
 
-  <h1>Evaluación Psicológica de Guardias</h1>
-  <p>Selecciona cómo estás realizando tu evaluación para comenzar:</p>
+        <section class="hero__container container">
+            <h1 class="hero__title">Realiza tu evaluación psicológica de manera rápida y segura</h1>
+            <p class="hero__paragraph">Completa el test psicológico para guardias OS10. Si eres APTO, podrás obtener tu certificado.</p>
+            <a href="https://forms.gle/dfxDwidsUJ6VSeJPA" class="cta" target="_blank">Iniciar Evaluación</a>
+        </section>
+    </header>
 
-  <div class="botones">
-    <button class="boton" onclick="location.href='particular.html'">Soy Particular</button>
-    <button class="boton" onclick="location.href='empresa.html'">Vengo por TECNOGESTIÓN</button>
-  </div>
+    <main>
+        <section class="container about">
+            <h2 class="subtitle">¿Cómo funciona?</h2>
+            <p class="about__paragraph">Responde el formulario de evaluación. Si apruebas, recibirás la información para el pago del certificado.</p>
 
-  <a class="whatsapp" href="https://wa.me/56912345678" target="_blank">📱</a>
+            <div class="about__main">
+                <article class="about__icons">
+                    <img src="./images/shapes.svg" class="about__icon">
+                    <h3 class="about__title">Evaluación Online</h3>
+                    <p class="about__paragrah">Completa el test desde cualquier dispositivo con acceso a Internet.</p>
+                </article>
+
+                <article class="about__icons">
+                    <img src="./images/paint.svg" class="about__icon">
+                    <h3 class="about__title">Revisión Automática</h3>
+                    <p class="about__paragrah">Tu resultado es procesado automáticamente y te informamos si fuiste aprobado.</p>
+                </article>
+
+                <article class="about__icons">
+                    <img src="./images/code.svg" class="about__icon">
+                    <h3 class="about__title">Certificación</h3>
+                    <p class="about__paragrah">Si apruebas, puedes obtener tu certificado oficial por solo $15.000 CLP.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="price container">
+            <h2 class="subtitle">Costo del certificado</h2>
+            <div class="price__table">
+                <div class="price__element price__element--best">
+                    <p class="price__name">Certificado OS10</p>
+                    <h3 class="price__price">$15.000 CLP</h3>
+                    <div class="price__items">
+                        <p class="price__features">Formato PDF personalizado</p>
+                        <p class="price__features">Envío por correo o WhatsApp</p>
+                        <p class="price__features">Validez para trámite OS10</p>
+                    </div>
+                    <a href="https://wa.me/56912345678" class="price__cta" target="_blank">Solicitar vía WhatsApp</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="https://wa.me/56912345678" class="footer__icons">
+                    <img src="./images/WhatsApp.svg" class="footer__img" alt="WhatsApp">
+                </a>
+            </div>
+            <h3 class="footer__copyright">© Evaluaciones Psicológicas Guardias de Seguridad OS10</h3>
+        </section>
+    </footer>
 
 </body>
 </html>
